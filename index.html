@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Πρύτανης Barber Shop</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #3F704D;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+            color: #000;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        /* LOGO */
+        .logo-box {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* NAME */
+        .business-name {
+            font-size: 30px;
+            font-weight: 900;
+            color: #000;
+            margin-bottom: 8px;
+        }
+
+        .address {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 25px;
+        }
+
+        /* BUTTONS */
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .button {
+            width: 100%;
+            min-height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+
+            text-decoration: none;
+            color: #000;
+
+            background: rgba(255, 255, 255, 0.08);
+
+            border: 2px solid #fff;
+            border-radius: 14px;
+
+            font-size: 17px;
+            font-weight: 800;
+
+            transition: 0.2s ease;
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-2px);
+        }
+
+        .button svg {
+            width: 23px;
+            height: 23px;
+            stroke: #000;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        footer {
+            margin-top: 28px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        @media (max-width: 500px) {
+            .logo-box {
+                width: 260px;
+                height: 260px;
+            }
+
+            .business-name {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGO -->
+    <div class="logo-box">
+        <!-- Βάλε εδώ το logo -->
+        <!-- <img src="pritanis-logo.png" alt="Πρύτανης Barber Shop"> -->
+    </div>
+
+    <!-- BUSINESS NAME -->
+    <div class="business-name">
+        ΠΡΥΤΑΝΗΣ BARBER SHOP
+    </div>
+
+    <div class="address">
+        Εθνικής Αντιστάσεως 81, Περιστέρι
+    </div>
+
+    <div class="buttons">
+
+        <!-- REVIEW -->
+        <a
+            class="button"
+            href="https://search.google.com/local/writereview?placeid=ChIJK2uiB06joRQRt8T0O8PvVLA"
+            target="_blank"
+        >
+            <svg viewBox="0 0 24 24">
+                <path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9L12 3z"/>
+            </svg>
+            Αφήστε μας μια αξιολόγηση
+        </a>
+
+        <!-- WEBSITE -->
+        <a
+            class="button"
+            href="https://pritanisbarbershop.gr/"
+            target="_blank"
+        >
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M3 12h18"/>
+                <path d="M12 3c3 3 3 15 0 18"/>
+                <path d="M12 3c-3 3-3 15 0 18"/>
+            </svg>
+            Επισκεφθείτε την ιστοσελίδα μας
+        </a>
+
+        <!-- FACEBOOK -->
+        <a
+            class="button"
+            href="https://www.facebook.com/share/1EBFXCRRG2/?mibextid=wwXIfr"
+            target="_blank"
+        >
+            <svg viewBox="0 0 24 24">
+                <path d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"/>
+            </svg>
+            Βρείτε μας στο Facebook
+        </a>
+
+        <!-- LOCATION -->
+        <a
+            class="button"
+            href="https://www.google.com/maps/search/?api=1&query=Google&query_place_id=ChIJK2uiB06joRQRt8T0O8PvVLA"
+            target="_blank"
+        >
+            <svg viewBox="0 0 24 24">
+                <path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+            Βρείτε μας στον χάρτη
+        </a>
+
+        <!-- PHONE -->
+        <a
+            class="button"
+            href="tel:+302105741270"
+        >
+            <svg viewBox="0 0 24 24">
+                <path d="M6.5 3.5l3 3-2 2c1.2 2.5 3.5 4.8 6 6l2-2 3 3c.7.7.7 1.8 0 2.5l-1.2 1.2c-.6.6-1.5.8-2.3.5C8.8 17.7 6.3 15.2 3.3 9c-.4-.8-.2-1.7.5-2.3L5 5.5c.7-.7 1.4-2 1.5-2z"/>
+            </svg>
+            Καλέστε μας: 210 574 1270
+        </a>
+
+    </div>
+
+    <footer>
+        © Πρύτανης Barber Shop
+    </footer>
+
+</div>
+
+</body>
+</html>
